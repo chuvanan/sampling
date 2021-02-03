@@ -34,7 +34,7 @@ dsdn = dsdn %>%
         solaodong_cuoinam <= 9 ~ "Nhom 1",
         solaodong_cuoinam >= 10 & solaodong_cuoinam <= 49 ~ "Nhom 2",
         solaodong_cuoinam >= 50 & solaodong_cuoinam <= 99 ~ "Nhom 3",
-        TRUE ~ NA_real_
+        TRUE ~ NA_character_
     ))
 
 dsdn_nhom1 = dsdn %>%
